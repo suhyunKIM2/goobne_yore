@@ -1,0 +1,107 @@
+<!--S: top_menu-->
+<?
+  include "../common/manual_head.html";
+?>
+<!--E: top_menu -->
+
+<!--  S: the  sidebar -->
+<?
+  $menuId='52'; 
+  include "../common/manual_left.html";
+?>
+<!--  E: the  sidebar -->
+
+<!-- S: page container -->
+<style>
+.bg_visua_banner{color:#e11a21;font-size:27px;}
+.bg_visua_banner img{float:left;}
+.bg_visua_banner span{float:right;height:128px;line-height:128px;font-weight: 800;letter-spacing: -1px;}
+.f_photo_img{width:194px;height:133px;margin-right:20px;position:relative;}
+.f_photo_img img{object-fit: cover;width:100%;height:100%;position: absolute;}
+.f_photo_img_2st{height:268px;}
+.pb10{height:150px;}
+.pt10 { height: 150px; padding-bottom: 11px;}
+ b{font-weight:600;}
+ .tabs a{padding:8px 30px;}
+  .arrow {
+	position: absolute;
+	top: 50%;
+	width: 5vmin;
+	height: 20vmin;
+	background: transparent;
+	border-top: 0.3vmin solid #D00003;
+	border-right: 0.3vmin solid #D00003;
+    border-bottom: 0.3vmin solid #D00003;
+	box-shadow: 0 0 0 #000;
+	transition: all 200ms ease;}
+
+	.right {
+		right:33px;
+		transform: translate3d(0,-50%,0) rotate(0deg);
+	}
+    .right:before {
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-40%,-60%) rotate(45deg);
+		width: 200%;
+		height: 200%;
+	}
+</style>
+<div id="container">
+
+<!-- S:page home -->
+<div class="page_content">
+   <p class="bg_visua_banner"> <img src="../images/menu/53_img/00.jpg" alt="" height="128"/><span>굽네 불금치킨 조리 매뉴얼(영상)</span></p>
+  <div class="page_txt cl">
+    <div class="location fr"><img src="../images/comm/home.png"  alt="home" class="home"><span class="paren">&gt;</span>제조 매뉴얼<span class="paren">&gt;</span><span class="nowpage">굽네 불금치킨 조리 매뉴얼 (영상)</span></div>
+    <p class="cl"></p>
+    <!-- s:탭메뉴 -->
+    <ul class="tabs cl">
+		  <li><a href="foodManual_01_53menu.html" title="">굽네 불금치킨 (한마리)</a></li>      
+		  <li><a href="foodManual_01_53_02menu.html" title="">굽네 불금치킨 (통다리)</a></li> 
+      	  <li><a href="foodManual_01_53_03menu.html" title="">굽네 불금치킨 (윙)</a></li> 
+		  
+	</ul>
+	<ul class="tabs cl" style="margin-top:5px;">
+          <li><a href="foodManual_01_53_04menu.html" title="">굽네 불금치킨 (순살)</a></li>
+		  <li class="active"><a href="foodManual_01_53_05menu.html" title="">굽네 불금치킨 조리 매뉴얼 (영상)</a></li>
+	</ul>
+    <!-- E:탭메뉴 --> 
+    <!--S: 01: 주재료--> 
+    <br>
+    
+    <!--S: 01: 주재료-->
+    <div class="L_photo_list">        
+        <p class="t_img_style2">
+        <dl class="fs13">
+          <dt><p class="s_menu_tit">굽네 불금치킨 조리 매뉴얼 (영상)</p></dt>
+          <dd style="font-size:15px;"></dd>          
+        </dl>
+        </p>
+		<!--<p class="f_photo_img_style2" style="height:200px; padding-top:15px; float:none;"><video src="../images/video/sweet_ch_1.mp4" autoplay loop controls style="width:500px">
+		<source src="../images/video/sweet_ch_1.mp4" tyle="video/mp4"></video></p>-->
+      </div>
+     
+    
+	<div style="clear:both;height: 50px;"></div>
+    </div>
+  </div>
+    <!-- E:page home --> 
+  </div>
+  <!-- E: page container --> 
+  <!-- S: footer -->
+  <?
+  include "../common/manual_footer.html";
+?>
+  <!-- E: footer --> 
+</div>
+<p></p>
+<!-- E: wrapper --> 
+<!-- T: top -->
+<div><a class="gotop" href="#top">Top&nbsp;▲</a> 
+  <!-- E: top --> 
+</div>
+</body>
+</html>
