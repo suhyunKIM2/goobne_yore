@@ -1,0 +1,143 @@
+<style>
+.left_text{position:absolute;left:0;z-index: 9;height:100%;background:#e2d9d1;width:134px;text-align: center;line-height: 45px;font-size:18px;font-weight: 600;letter-spacing: -2px;color:#5e2d02;}
+.nav_name{background: #816f5f;color: #fff;padding: 5px 14px;font-weight: 600;font-size: 16px;    margin-top: -5px !important;}
+.ch_re{display: none;}
+</style>
+<script>
+	$(document).ready(function(e) {
+
+if (new Date() >= new Date('11/23/2021 07:30:00')            // *신버전 언제부터
+            && new Date() < new Date('11/23/2220 08:39:59')) {        // 언제까지 실행하기 
+            //alert('test');
+            //$('container').addClass('a')
+           $(document).ready(function () {
+                $('.ch_re').css('display','block');
+            }); 
+        } else if (new Date() >= new Date('10/05/2020 08:40:00')            // *구버전 언제부터
+            && new Date() < new Date('10/05/2095 08:59:59')) {      // 언제까지 실행하기 
+            $(document).ready(function () {
+                $('.ch_back').css('display','block');
+            }); 
+        }
+    });
+</script>
+<div id="left_menu" class="noprint">
+    <div id="sidebar"> 
+      
+	  <? if($menuGb == 'store') { ?>
+      <img src="../images/comm/bg_s_tit.gif" alt="매장운영매뉴얼"/> 
+      <!-- navigation menu-->
+      <ul id="menu">
+        <li><a href="storeManual_01_01define.html" <? if($menuId == '01') { ?>class="active"<? } ?>><span>가맹 사업이란?</span></a></li>
+        <li><a href="storeManual_02_01store.html"  <? if($menuId == '02') { ?>class="active"<? } ?>><span>매장 운영</span></a> </li>
+        <li><a href="storeManual_03_01contract.html" <? if($menuId == '03') { ?>class="active"<? } ?>><span>주요 계약사항</span></a></li>
+        <li><a href="storeManual_04_01business.html" <? if($menuId == '04') { ?>class="active"<? } ?>><span>사업자가 알아야 할 사항</span></a></li>
+      </ul> 
+	  <? } else { ?>
+      <!--<img src="../images/comm/bg_f_tit.gif" alt="매장운영매뉴얼"/>-->
+      <div style="position:relative;height:45px;">
+          <div class="left_text">조리 매뉴얼</div>
+          <img src="../images/comm/bg_f_tit.gif" alt="매장운영매뉴얼" style="position:absolute;"/>
+      </div>
+      <!-- navigation menu-->
+      <ul id="menu">
+        <li class="nav_name">치킨</li>
+		<li><a href="foodManual_01_29menu.html" <? if($menuId == '28') { ?>class="active"<? } ?>><span>프랩 선손질 방법</span></a></li> 
+        <li><a href="foodManual_01_01menu.html" <? if($menuId == '01') { ?>class="active"<? } ?>><span>굽네 오리지널</span></a></li>
+        <li><a href="foodManual_01_15_01menu.html" <? if($menuId == '15') { ?>class="active"<? } ?>><span>굽네 두 마리 세트</span></a></li>
+        <li><a href="foodManual_01_26menu.html" <? if($menuId == '25') { ?>class="active"<? } ?>><span>굽네 볼케이노</span></a></li>
+        <li><a href="foodManual_01_35menu.html" <? if($menuId == '35') { ?>class="active"<? } ?>><span>굽네 스윗 볼케이노</a></li>
+        <li><a href="foodManual_01_30menu.html" <? if($menuId == '30') { ?>class="active"<? } ?>><span>굽네 갈비 천왕&nbsp;<img src="../images/menu/icon_new.png" alt="" class="vm"/></span></a></li>
+        <li><a href="foodManual_01_33menu.html" <? if($menuId == '33') { ?>class="active"<? } ?>><span>굽네 핫 갈비 천왕&nbsp;<img src="../images/menu/icon_new.png" alt="" class="vm"/></span></a></li>
+        <li><a href="foodManual_01_36menu.html" <? if($menuId == '36') { ?>class="active"<? } ?>><span>굽네 허니멜로</span></a></li>
+        <li><a href="foodManual_01_28menu.html" <? if($menuId == '27') { ?>class="active"<? } ?>><span>굽네 반반(A, B, C, D)</span></a></li>
+        <li><a href="foodManual_01_31_01menu.html" <? if($menuId == '31') { ?>class="active"<? } ?>><span>굽네 닭가슴살 그릴 후랑크 시리즈</span></a></li>
+        
+        <li style="height:10px;"></li>
+        
+        <!-----20211123 오픈 --------->
+        <li class="ch_re"><a href="foodManual_01_53menu.html" <? if($menuId == '53') { ?>class="active"<? } ?>><span>굽네 불금 치킨&nbsp;<img src="../images/menu/icon_new.png" alt="" class="vm"/></span></a></li>
+       <!-----20210315 오픈--------->
+        <li><a href="foodManual_01_48menu.html" <? if($menuId == '48') { ?>class="active"<? } ?>><span>굽네 양념 히어로 치킨&nbsp;<img src="../images/menu/icon_new.png" alt="" class="vm"/></span></a></li>
+        <li><a href="foodManual_01_49menu.html" <? if($menuId == '49') { ?>class="active"<? } ?>><span>굽네 갈릭 마왕 치킨&nbsp;<img src="../images/menu/icon_new.png" alt="" class="vm"/></span></a></li>
+        <li><a href="foodManual_01_10menu.html" <? if($menuId == '10') { ?>class="active"<? } ?>><span>굽네 고추 바사삭</span></a></li>
+        <li><a href="foodManual_01_27menu.html" <? if($menuId == '26') { ?>class="active"<? } ?>><span>굽네 딥치즈</span></a></li>
+        
+        <li style="height:10px;"></li>
+        
+        <li class="nav_name">피자</li>
+		<li><a href="foodManual_01_37menu.html" <? if($menuId == '37') { ?>class="active"<? } ?>><span>굽네(갈비천왕, 허니멜로, 볼케이노) 피자 3종</span></a></li>
+		<li><a href="foodManual_01_40menu.html" <? if($menuId == '40') { ?>class="active"<? } ?>><span>굽네 시카고 딥디쉬 피자&nbsp;<img src="../images/menu/icon_new.png" alt="" class="vm"/></span></a></li>
+        <li><a href="foodManual_01_46menu.html" <? if($menuId == '46') { ?>class="active"<? } ?>><span>굽네 슈림프 시카고 딥디쉬 피자&nbsp;<img src="../images/menu/icon_new.png" alt="" class="vm"/></span></a></li>
+        <li><a href="foodManual_01_50menu.html" <? if($menuId == '50') { ?>class="active"<? } ?>><span>굽네 페퍼로니 찹찹 피자&nbsp;<img src="../images/menu/icon_new.png" alt="" class="vm"/></span></a></li>
+       
+       <li style="height:10px;"></li>
+        
+        <li class="nav_name">사이드</li>
+        <li><a href="foodManual_01_11menu.html" <? if($menuId == '11') { ?>class="active"<? } ?>><span>굽네 폭립(돼지 등갈비)</span></a></li>
+        <!--<li><a href="foodManual_01_12menu.html" <? if($menuId == '12') { ?>class="active"<? } ?>><span>굽네 불 미니족</span></a></li>-->
+        <li><a href="foodManual_01_13menu.html" <? if($menuId == '13') { ?>class="active"<? } ?>><span>굽네 불 닭발</span></a></li>
+        <li><a href="foodManual_01_52menu.html" <? if($menuId == '52') { ?>class="active"<? } ?>><span>굽네 닭볶음탕&nbsp;<img src="../images/menu/icon_new.png" alt="" class="vm"/></span></a></li>
+        <li><a href="foodManual_01_44menu.html" <? if($menuId == '44') { ?>class="active"<? } ?>><span>국물 떡볶이(매장용)&nbsp;<img src="../images/menu/icon_new.png" alt="" class="vm"/></span></a></li>
+		<li><a href="foodManual_01_38menu.html" <? if($menuId == '38') { ?>class="active"<? } ?>><span>매콤 치즈 소떡소떡&nbsp;<img src="../images/menu/icon_new.png" alt="" class="vm"/></span></a></li>
+        <li><a href="foodManual_01_41_02menu.html" <? if($menuId == '41') { ?>class="active"<? } ?>><span>사이드 5종 메뉴&nbsp;<img src="../images/menu/icon_new.png" alt="" class="vm"/></span></a></li>
+        <li><a href="foodManual_01_45menu.html" <? if($menuId == '45') { ?>class="active"<? } ?>><span>바게트볼(갈릭크림)&nbsp;<img src="../images/menu/icon_new.png" alt="" class="vm"/></span></a></li>
+        <li><a href="foodManual_01_51menu.html" <? if($menuId == '51') { ?>class="active"<? } ?>><span>에그미니 타르트&nbsp;<img src="../images/menu/icon_new.png" alt="" class="vm"/></span></a></li>
+        <li><a href="foodManual_01_23menu.html" <? if($menuId == '22') { ?>class="active"<? } ?>><span>굽네 웨지감자</span></a></li>
+		<li><a href="foodManual_01_42menu.html" <? if($menuId == '42') { ?>class="active"<? } ?>><span>치트킹 웨지감자&nbsp;<img src="../images/menu/icon_new.png" alt="" class="vm"/></span></a></li>
+		<li><a href="foodManual_01_34menu.html" <? if($menuId == '34') { ?>class="active"<? } ?>><span>굽네 케이준 감자&nbsp;<img src="../images/menu/icon_new.png" alt="" class="vm"/></span></a></li>
+        <li><a href="foodManual_01_43menu.html" <? if($menuId == '43') { ?>class="active"<? } ?>><span>치트킹 케이준 감자&nbsp;<img src="../images/menu/icon_new.png" alt="" class="vm"/></span></a></li>
+		<li><a href="foodManual_01_14menu.html" <? if($menuId == '14') { ?>class="active"<? } ?>><span>파채 추가</span></a></li>
+        
+        <li style="height:10px;"></li>
+        
+        <li class="nav_name">기타</li>
+        <li><a href="foodManual_01_16menu.html" <? if($menuId == '16') { ?>class="active"<? } ?>><span>소스류</span></a></li>
+        <li><a href="foodManual_01_17menu.html" <? if($menuId == '17') { ?>class="active"<? } ?>><span>오븐 사용방법 </span></a></li>
+        <!--<li><a href="foodManual_01_18menu.html" <? if($menuId == '18') { ?>class="active"<? } ?>><span>전자레인지 사용방법</span></a></li>-->
+        <li><a href="foodManual_01_19menu.html" <? if($menuId == '19') { ?>class="active"<? } ?>><span>소독제 사용방법</span></a></li>
+        <li><a href="foodManual_01_21menu.html" <? if($menuId == '21') { ?>class="active"<? } ?>><span>기구 및 장비</span></a></li>
+        <li><a href="foodManual_01_20menu.html" <? if($menuId == '20') { ?>class="active"<? } ?>><span>주의사항</span></a></li> 
+        
+        <!----20201230 오픈--------
+        <li><a href="foodManual_01_47menu.html" <? if($menuId == '47') { ?>class="active"<? } ?>><span>굽네 콤보 시리즈 3&nbsp;<img src="../images/menu/icon_new.png" alt="" class="vm"/></span></a></li>
+        <!------------------------->
+		
+		
+		
+       
+		
+        
+		
+		
+        
+		<!--<li><a href="foodManual_01_32menu.html" <? if($menuId == '32') { ?>class="active"<? } ?>><span>굽네 익스트림 볼케이노&nbsp;<img src="../images/menu/icon_new.png" alt="" class="vm"/></span></a></li>-->
+      	
+		<!--<li><a href="foodManual_01_39menu.html" <? if($menuId == '39') { ?>class="active"<? } ?>><span>굽네 마라 볼케이노&nbsp;<img src="../images/menu/icon_new.png" alt="" class="vm"/></span></a></li>-->
+		
+		
+      	
+      	<!--<li><a href="foodManual_01_02menu.html" <? if($menuId == '02') { ?>class="active"<? } ?>><span>굽네 오리지널 순살</span></a></li>
+        <li><a href="foodManual_01_03menu.html" <? if($menuId == '03') { ?>class="active"<? } ?>><span>굽네 오리지널 통다리</span></a></li>
+        <li><a href="foodManual_01_04menu.html" <? if($menuId == '04') { ?>class="active"<? } ?>><span>굽네 오리지널 윙</span></a></li>-->
+		
+        <!--<li><a href="foodManual_01_07menu.html" <? if($menuId == '07') { ?>class="active"<? } ?>><span>굽네 데리치킨</span></a></li>-->
+        <!--<li><a href="foodManual_01_25menu.html" <? if($menuId == '24') { ?>class="active"<? } ?>><span style="letter-spacing:-1px;">굽네 후르츄 소이갈릭</span></a></li>-->
+        <!--<li><a href="foodManual_01_08menu.html" <? if($menuId == '08') { ?>class="active"<? } ?>><span>굽네 양념 치킨</span></a></li>-->
+        <!--<li><a href="foodManual_01_05menu.html" <? if($menuId == '05') { ?>class="active"<? } ?>><span>굽네 핫 치킨</span></a></li>
+        <li><a href="foodManual_01_09menu.html" <? if($menuId == '09') { ?>class="active"<? } ?>><span>굽네 쌀강정</span></a></li>-->
+        
+        <!--<li><a href="foodManual_01_24menu.html" <? if($menuId == '23') { ?>class="active"<? } ?>><span style="letter-spacing:-1px;">굽네 허니커리 바사삭</span></a></li>-->
+        
+        
+		
+		
+		
+		
+        
+        		
+	    <!--li><a href="foodManual_01_22menu.html" <? if($menuId == '22') { ?>class="active"<? } ?>><span>오복치킨<!--&nbsp;<img src="../images/menu/icon_new.png" alt="" class="vm"/> </span></a></li-->
+      </ul>
+      <? } ?>
+    </div>
+  </div>
