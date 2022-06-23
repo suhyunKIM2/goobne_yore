@@ -2,6 +2,25 @@
 .left_text{position:absolute;left:0;z-index: 9;height:100%;background:#e2d9d1;width:134px;text-align: center;line-height: 45px;font-size:18px;font-weight: 600;letter-spacing: -2px;color:#5e2d02;}
 .nav_name{background: #816f5f;color: #fff;padding: 5px 14px;font-weight: 600;font-size: 16px;    margin-top: -5px !important;}
 .ch_re{display: none;}
+
+/*width:100%설정*/
+div#wrap {
+    min-width: 853px;width: 100%;}
+ #top_bg {
+    z-index: 999;width: 98%;padding:0 1%;min-width: 853px;
+}   
+.fl{margin-left: 0 !important;}
+div#sidebar{    height: 100rem;position:relative;    margin-top: 36px;    width: auto;    border-bottom: 1px solid #cfcfcf;}
+div#container{width:auto;min-width:auto;margin-top:55px;overflow: hidden;    height: 100%;float:none;    padding: 0 44px 5%;}
+.footer{float:none;min-width: 665px;width:100%;clear: both;display: block;}
+.f_photo_img{width:auto;margin-right:10px;min-width: 127px;}
+.page_txt,.page_content{height:100%;min-height: 100%;}
+.L_photo_list{height:auto;overflow:hidden;}
+.L_photo_list dl{float:left !important;}
+.L_photo_list dl.line_list,.f_photo_img{clear: both;}
+.pt10{height:auto !important;}
+.f_photo_img_style2{height:auto !important;    width: 100%;}
+.f_photo_img_style2 video{width:100% !important;}
 </style>
 <script>
 	$(document).ready(function(e) {
@@ -95,6 +114,8 @@ if (new Date() >= new Date('11/23/2021 07:30:00')            // *신버전 언�
 		<li><a href="foodManual_01_42menu.html" <? if($menuId == '42') { ?>class="active"<? } ?>><span>치트킹 웨지감자</span></a></li>
 		<li><a href="foodManual_01_34menu.html" <? if($menuId == '34') { ?>class="active"<? } ?>><span>굽네 케이준 감자</span></a></li>
         <li><a href="foodManual_01_43menu.html" <? if($menuId == '43') { ?>class="active"<? } ?>><span>치트킹 케이준 감자</span></a></li>
+		<li><a href="foodManual_01_58menu.html" <? if($menuId == '58') { ?>class="active"<? } ?>><span>모짜 치즈볼&nbsp;<img src="../images/menu/icon_new.png" alt="" class="vm"/></span></a></li>
+		<li><a href="foodManual_01_59menu.html" <? if($menuId == '59') { ?>class="active"<? } ?>><span>콰트로 모짜 치즈&nbsp;<img src="../images/menu/icon_new.png" alt="" class="vm"/></span></a></li>
 		<li><a href="foodManual_01_14menu.html" <? if($menuId == '14') { ?>class="active"<? } ?>><span>파채 추가</span></a></li>
         
         <li style="height:10px;"></li>
